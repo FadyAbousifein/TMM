@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: black; 
+}
+
+.offset::before {
+    display: block;
+    content: '';
+    height: 4rem; 
+    margin-top: -4rem; 
+}
+
+/*--- Navigation --*/
+
+.navbar {
+    text-transform: uppercase; 
+    font-weight: 700; 
+    font-size: .9rem; 
+    letter-spacing: .1rem; 
+    background-color: white;
+}
+
+.navbar-brand img{
+    height: 2rem; 
+}
+
+.navbar-nav li {
+    padding: .7rem; 
+}
+
+.navbar-nav .nav-link {
+    color: black; 
+    padding-top: .8rem; 
+}
+
+.nav-link:hover {
+    color: darkgray; 
+}
+
+/*--- Home/Landing Page --*/
+
+.home-inner {
+    background-image: url(images/TMMLOGO.png);
+}
+
+/*--- Mission --*/
+
+.narrow {
+    width: 75%; 
+    margin: 1.5rem auto; 
+    padding-top: 2rem; 
+}
+
+.narrow h1 {
+    font-size: 2.4rem; 
+    font-weight: bold; 
+}
+
+.btn-secondary {
+    border-width: medium; 
+    border-radius: 0; 
+    text-transform: uppercase; 
+    font-size: 1.2 rem; 
+    padding: .6rem 1.2rem; 
+    margin: 1rem; 
+    color: white; 
+    background-color: darkgray;
+    border-color: darkgray; 
+}
+
+.btn-secondary:hover {
+    background-color: darkgray;
+    border-color: darkgray;
+}
+
+.green {
+    color: black;
+}
+
+h6 a {
+    color: #505962;
+}
+
+h6 a:hover {
+    text-decoration: none;
+    color: black;
+}
+/*--- Services --*/
+
+#service {
+    background-color: white;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem; 
+    border-radius: 0;
+}
+
+h3.heading {
+    font-size: 1.9rem; 
+    font-weight: 700; 
+    text-transform: uppercase;
+    margin-bottom: 1.9rem; 
+    text-align: center; 
+}
+
+.heading2 {
+    font-size: 1.9rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    margin-bottom: 1.9rem; 
+    text-align: center; 
+}
+
+
+.heading-underline {
+    width: 3rem; 
+    height: .2rem; 
+    background-color: black; 
+    margin: 0 auto 2rem; 
+}
+
+.feature svg.svg-inline--fa {
+    color: black; 
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;
+    font-weight: bold; 
+
+}
+
+.feature p {
+    font-size: 1.1rem; 
+}
+
+.test {
+    margin-bottom: 50px; 
+}
+
+.left {
+    text-align: left; 
+}
+
+ul {
+    text-align: left;
+}
+
+li::marker {
+    color: black;
+}
+
+.js-scroll {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: transform 800ms, opacity 500ms;
+}
+   
+.js-scroll.scrolled {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*--- Magazine --*/
+
+.image {
+    position: relative; 
+    width: 25%; 
+    height: 40%;
+    margin: 0 auto; 
+}
+
+.imageImg {
+    display: block; 
+    width: 100%;
+    height: 100%;
+}
+
+.imageOverlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 133, 77, 0.9);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+    transition: opacity 0.25s ease-in-out;  
+}
+
+.imageOverlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s ease-in-out;
+}
+
+.imageOverlay:hover {
+    opacity: 1;
+}
+
+.imageOverlay:hover > * {
+    transform: translateY(0);
+}
+
+
+.imageTitle {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.imageTitle a {
+    text-decoration: none;
+}
+
+.btn-2 {
+    background-color: white;
+    color: #29854D; 
+}
+
+.btn-2:hover {
+    color: #03C04A;
+}
+
+
+/*--- Contact Information --*/
+
+footer {
+    color: black; 
+    padding: 2rem 0 2rem; 
+    margin-top: 1rem; 
+}
+
+footer img {
+   height: 3rem; 
+}
+
+ hr.socket {
+     width: 100%;
+     border-top: .2rem solid black; 
+     margin-top: 3rem; 
+ }
+
+div#copyRight {
+    text-align: center; 
+} 
