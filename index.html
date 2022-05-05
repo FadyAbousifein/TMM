@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fixed.css">
+    <link rel="stylesheet" href="input.html">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body data-spy="scroll" data-target="#navbarResponsive">
@@ -58,16 +60,27 @@
   <div id="mission" class="offset jumbotron">
     <div class="col-12 narrow text-center">
       <h1>Our Mission</h1>
-      <p class="lead"></p>
-      <p class="lead"></p>
-      <p class="lead"></p>
+      <p class="lead" style="font-size: 1.3rem;">It is inevitable that with easy access to internet misinformation will be present. Specifically medical misinformation. This is why we decided to create TMM, a project dedicated to Tackling Medical Misinformation.</p>
+      <p style="font-size: 1.3rem;">TMM is a website where you can input website URL's regarding anything related to medicine and we will grade it's reliability.</p>
     </div> 
   </div>
   <!-- End Mission -->
   <!-- Service change this name later -->
-  <div id="service" class="offset">
-    <div class="">
-    <div class="narrow">
+  <div id="service" class="offset boxContainer">
+    <form action="./" method="get">
+      <div class="searchbar">
+        <input style="width: 500px" type="text" class="searchbar__input" name="search" placeholder="Search"></input>
+        <button href="input.html" type="submit" onclick="myfunc()" class="searchbar__button">
+          <script>
+            function myfunc(){
+              var input = document.getElementById('service');
+              alert(input.value);
+            }
+          </script>
+          <i class="material-icons">search</i>
+        </button>
+      </div>
+    </form>  
   </div>
   <!-- End Service -->
   <!-- Contact Information -->
@@ -75,6 +88,7 @@
     <footer>
       <div class="row justify-content-center">
         <div class="col-md-5 text-center">
+          <p>We acknowledge possible innacuracies with our service, feel free to get in contact with us at <strong>TacklingMedicalMisinformation@gmail.com</strong></p>
           <img src="images/HeaderTMM.png">
         </div>
       </div>
