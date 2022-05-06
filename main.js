@@ -14,7 +14,7 @@ function getText (){
     input = document.getElementById("input").value;
     for(let i = 0; i < approved.length; i++){
         if(input.includes(approved[i])){
-            alert("This Website is reliable");
+            alert("This Website is reliable as it follows one of the following criteria: Peer reviewed, Medically reviewed, Qualified author");
             return
         }
     }for(let i = 0; i < notApproved.length; i++){
