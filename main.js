@@ -6,7 +6,7 @@ const scroll = new SmoothScroll('.navbar a[href*="#"]', {
 // Reliability Checker
 
 let input = '';
-let approved = ['.gov', '.edu', 'pubmed','.nih', '.nlm', '.ncbi', 'medscape.com', 'webMD', 'mayoclinic'];
+let approved = ['.gov', '.edu', 'pubmed','.nih', '.nlm', '.ncbi', 'medscape.com', 'webMD', 'mayoclinic', 'healthline.com'];
 let notApproved = ['wikipedia', 'wiki', 'NaturalNews.com', 'reddit', 'quora', 'facebook', 'twitter', 'instagram', 'drugs.com', 'medgadget',];
 document.getElementById("searchButton").addEventListener("click", getText);
 function getText (){
